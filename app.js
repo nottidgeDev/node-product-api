@@ -12,10 +12,10 @@ app.use('/api', apiRouter);
 
 app.use(express.static(resolve('./public')));
 
-
-app.get('/', (req, res) => {
-  res.sendFile(resolve(__dirname, './PrimeNexus-app/index.html'));
-});
+// you dont need to use API to serve static files
+// app.get('/', (req, res) => {
+//   res.sendFile(resolve(__dirname, './PrimeNexus-app/index.html'));
+// });
 
 
 
