@@ -1,15 +1,18 @@
 import express from 'express';
 import { fileURLToPath } from 'url';
 import { dirname, resolve } from 'path';
+import cors from 'cors';
 import apiRouter from './appApis.js';
+import productRouter from './routes/productRoutes.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 app.use('/api', apiRouter);
-
+app.use('/api/products', productRouter);
 app.use(express.static(resolve('./public')));
 
 // you dont need to use API to serve static files
