@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects/Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-center">
+      <div class="nav-header">
+        <img src="./primenexus-logo.svg" class="logo" alt="PrimeNexus logo" />
+        <button class="nav-toggle" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html#api-routes">API Routes</a></li>
+      </ul>
+      <ul class="social-icons">
+        <li><a href="https://github.com/nottidgeDev" aria-label="GitHub" target="_blank" rel="noopener"><i
+              class="fab fa-github"></i></a></li>
+        <li><a href="https://linkedin.com/in/nottidgedev" aria-label="LinkedIn" target="_blank" rel="noopener"><i
+              class="fab fa-linkedin"></i></a></li>
+        <li><a href="mailto:nottidgechibueze042@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-tag">Work</div>
+      <h1>Projects/Portfolio</h1>
+      <p>A few selection of projects I have built — ranging from full-stack web apps to backend API practice. Each one
+        represents a specific skill set or concept I was working through.</p>
+    </section>
+
+    <section class="projects-grid">
+
+      <!-- Inkdrop -->
+      <div class="project-card">
+        <div class="project-card-top">
+          <div class="project-header">
+            <h2 class="project-name">Inkdrop</h2>
+            <span class="project-tag">Full-stack App</span>
+          </div>
+          <p class="project-desc">A social feed where users make at least one creative post daily to keep a streak
+            alive. Accountability is built into the product through social pressure — miss a day and your streak resets
+            publicly.</p>
+          <div class="project-stack">
+            <span class="stack-pill">Laravel</span>
+            <span class="stack-pill">Blade</span>
+            <span class="stack-pill">TailwindCSS</span>
+            <span class="stack-pill">Alpine.js</span>
+            <span class="stack-pill">MySQL</span>
+          </div>
+        </div>
+        <div class="project-card-bottom">
+          <!-- Replace # with your live URL or GitHub link when ready -->
+          <a href="https://github.com/nottidgeDev/Inkdrop" class="project-link github-link" target="_blank"
+            rel="noopener">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://inkdrop-production.up.railway.app/" class="project-link live-link" target="_blank"
+            rel="noopener">
+            <i class="fas fa-external-link-alt"></i> Live
+          </a>
+        </div>
+      </div>
+
+      <!-- PrimeNexus -->
+      <div class="project-card">
+        <div class="project-card-top">
+          <div class="project-header">
+            <h2 class="project-name">PrimeNexus</h2>
+            <span class="project-tag">Practice Project</span>
+          </div>
+          <p class="project-desc">A Laravel practice project focused on authentication, authorization, routing, and
+            layout isolation. Built to get comfortable with middleware, guards, and multi-layout Blade structures before
+            applying them in production.</p>
+          <div class="project-stack">
+            <span class="stack-pill">Laravel</span>
+            <span class="stack-pill">Blade</span>
+            <span class="stack-pill">TailwindCSS</span>
+            <span class="stack-pill">Alpine.js</span>
+            <span class="stack-pill">MySQL</span>
+          </div>
+        </div>
+        <div class="project-card-bottom">
+          <a href="https://github.com/nottidgeDev/primenexus" class="project-link github-link" target="_blank"
+            rel="noopener">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://primenexus-production.up.railway.app/" class="project-link live-link" target="_blank"
+            rel="noopener">
+            <i class="fas fa-external-link-alt"></i> Live
+          </a>
+        </div>
+      </div>
+
+      <!-- Node Product API -->
+      <div class="project-card">
+        <div class="project-card-top">
+          <div class="project-header">
+            <h2 class="project-name">Node Product API</h2>
+            <span class="project-tag">Backend / API</span>
+          </div>
+          <p class="project-desc">A RESTful API built to practice Express routing, Sequelize ORM, and CRUD operations
+            against a SQLite database. Comes with a browser-based API explorer so routes can be tested live without any
+            external tools.</p>
+          <div class="project-stack">
+            <span class="stack-pill">Node.js</span>
+            <span class="stack-pill">Express</span>
+            <span class="stack-pill">Sequelize</span>
+            <span class="stack-pill">SQLite3</span>
+          </div>
+        </div>
+        <div class="project-card-bottom">
+          <a href="https://github.com/nottidgeDev/node-product-api" class="project-link github-link" target="_blank"
+            rel="noopener">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="index.html#api-routes" class="project-link live-link" target="_blank" rel="noopener">
+            <i class="fas fa-external-link-alt"></i> Live
+          </a>
+        </div>
+      </div>
+
+      <!-- Todo App -->
+      <div class="project-card">
+        <div class="project-card-top">
+          <div class="project-header">
+            <h2 class="project-name">Todo App</h2>
+            <span class="project-tag">Frontend</span>
+          </div>
+          <p class="project-desc">A task tracker that lets users log activities with dates and descriptions. Built with
+            vanilla HTML, CSS, and JavaScript — no frameworks — as a focused exercise in DOM manipulation and state
+            management without dependencies.</p>
+          <div class="project-stack">
+            <span class="stack-pill">HTML</span>
+            <span class="stack-pill">CSS</span>
+            <span class="stack-pill">JavaScript</span>
+          </div>
+        </div>
+        <div class="project-card-bottom">
+          <a href="https://github.com/nottidgeDev/todo-app" class="project-link github-link" target="_blank"
+            rel="noopener">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="http://todo-app-sigma-virid-98.vercel.app" class="project-link live-link" target="_blank"
+            rel="noopener">
+            <i class="fas fa-external-link-alt"></i> Live
+          </a>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>Built by <strong>PrimeNexus</strong> · Node.js + Express + Sequelize · <a
+        href="https://github.com/nottidgeDev/node-product-api" target="_blank" rel="noopener">View on GitHub <i
+          class="fas fa-external-link-alt"></i></a></p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const linksEl = document.querySelector('.links');
+    if (toggle && linksEl) {
+      toggle.addEventListener('click', () => linksEl.classList.toggle('show'));
+    }
+  </script>
+</body>
+
+</html>
